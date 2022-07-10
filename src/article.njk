@@ -5,6 +5,7 @@ pagination:
   alias: article
 eleventyComputed:
   mp3Url: "/mp3/{{article.id}}.mp3"
+  title: "{{article.title}}"
 layout: "layouts/article.njk"
 permalink: "/article/{{article.id}}/"
 ---
