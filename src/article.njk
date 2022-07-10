@@ -1,0 +1,14 @@
+---
+pagination:
+  data: githubIssues
+  size: 1
+  alias: article
+eleventyComputed:
+  mp3Url: "/mp3/{{article.id}}.mp3"
+layout: "layouts/article.njk"
+permalink: "/article/{{article.id}}/"
+---
+
+<h1>{{article.title}}</h1>
+
+{{article.content|safe}}
