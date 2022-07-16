@@ -49,7 +49,6 @@ module.exports = function (eleventyConfig) {
         description: "description",
         feedUrl: "https://larryhudson-reading-list.netlify.app/podcast.xml",
         siteUrl: "https://larryhudson-reading-list.netlify.app",
-        imageUrl: "http://example.com/icon.png",
         docs: "https://larryhudson-reading-list.netlify.app",
         author: "Larry Hudson",
         managingEditor: "Larry Hudson",
@@ -63,12 +62,6 @@ module.exports = function (eleventyConfig) {
         itunesSummary: "I am a summary",
         itunesOwner: { name: "Larry Hudson", email: "larryhudson@hey.com" },
         itunesExplicit: false,
-        itunesCategory: [
-          {
-            text: "Entertainment",
-          },
-        ],
-        itunesImage: "http://example.com/image.png",
       });
 
       podcastItems.forEach((podcastItem) => {
