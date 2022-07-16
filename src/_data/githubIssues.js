@@ -22,10 +22,13 @@ module.exports = async function () {
 
   const issues = response.data;
 
+  console.log(issues);
+
   return await Promise.all(
     issues.map(async (issue) => ({
       id: issue.id,
       title: issue.title,
+      date: new Date(issue.created_at),
       content: await getContentFromUrl(issue.body),
       articleUrl: issue.body,
     }))
