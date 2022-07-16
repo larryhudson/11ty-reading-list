@@ -22,8 +22,6 @@ module.exports = async function () {
 
   const issues = response.data;
 
-  console.log(issues);
-
   return await Promise.all(
     issues.map(async (issue) => ({
       id: issue.id,
