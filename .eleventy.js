@@ -45,8 +45,8 @@ module.exports = function (eleventyConfig) {
       );
 
       const feed = new Podcast({
-        title: "Eleventy text to speech example",
-        description: "description",
+        title: "Larry's reading list",
+        description: "Audio versions of articles Larry wants to read",
         feedUrl: "https://larryhudson-reading-list.netlify.app/podcast.xml",
         siteUrl: "https://larryhudson-reading-list.netlify.app",
         docs: "https://larryhudson-reading-list.netlify.app",
@@ -58,8 +58,8 @@ module.exports = function (eleventyConfig) {
         pubDate: "March 27, 2022 17:14:00 GMT",
         ttl: 60,
         itunesAuthor: "Larry Hudson",
-        itunesSubtitle: "Generate MP3 from Eleventy content",
-        itunesSummary: "I am a summary",
+        itunesSubtitle: "Audio articles for Larry to listen to",
+        itunesSummary: "Generated with Microsoft TTS",
         itunesOwner: { name: "Larry Hudson", email: "larryhudson@hey.com" },
         itunesExplicit: false,
       });
