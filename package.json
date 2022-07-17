@@ -14,7 +14,7 @@
     "@octokit/core": "^4.0.4",
     "article-parser": "^7.0.0-rc2",
     "dotenv": "^16.0.1",
-    "eleventy-plugin-text-to-speech": "^1.0.1",
+    "eleventy-plugin-text-to-speech": "^1.0.2",
     "mp3-duration": "^1.1.0",
     "netlify-plugin-cache": "^1.0.3",
     "podcast": "^2.0.0"
