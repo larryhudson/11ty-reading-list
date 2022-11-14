@@ -4,9 +4,13 @@ const { Octokit } = require("@octokit/core");
 const { extract } = require("article-parser");
 
 async function getContentFromUrl(url) {
-  const article = await extract(url);
+  try {
+    const article = await extract(url);
 
-  return article.content;
+    return article.content;
+  } catch {
+    return null;
+  }
 }
 
 module.exports = async function () {
